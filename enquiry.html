@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry-UniBuddy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+<header>
+    <h1>UniBuddy</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>  
+
+<main>
+
+<!--HERO SECTION-->
+<section class="enquiry-hero">
+
+<div class="enquiry-hero-content">
+
+<h1>Student Enquiries</h1>
+
+<p>
+Have questions about UniBuddy? Contact us and we will assist you.
+</p>
+
+</div>
+
+</section>
+
+    <h2>Enquiry Form</h2>
+
+    <img src="Images/enquiry.jpg" alt="Enquiry">
+
+<section class="enquiry-section">
+
+<!--Form First-->
+
+<div class="enquiry-form">
+
+<h2>Get in touch with us.</h2>
+
+<p class="form-text">
+Complete the enquiry form and our team will get back to you as soon as possible.
+</p>
+
+    <img src="Images/enquiry 2.jpg" alt="Enquiry-UniBuddy">
+
+    <form id="enquiryForm" novalidate>
+    <div class="form-element-group">
+        <label for="enquiryName">First Name *</label>
+        <input type="text" id="enquiryName" placeholder="Your name" required><br><br>
+
+    <div class="form-element-group">
+        <label for="enquiryEmail">Email Address *</label>
+        <input type="email" id="enquiryEmail" placeholder="Your email" required><br><br>
+    </div>
+
+    <div class="form-element-group">
+        <label for="enquiryPlan">Select UniBuddy Focus Plan *</label>
+        <select id="enquiryPlan" required>
+            <option value="basic">Basic Companion Tier (Free / Core Access)</option>
+            <option value="premium">Premium Success Tier (R150 / Month - Includes Peer Mentors)</option>
+            <option value="group">Study Group Cluster Package (R350 / Semester)</option>
+        </select><br><br>
+    </div>
+
+    <div class="form-element-group">
+        <label for="enquiryAddon">Optional Academic Support Add-ons *</label>
+        <select id="enquiryAddon">
+            <option value="none">No extra add-ons (R0)</option>
+            <option value="tutor">1-on-1 Exam Preparation Assistant (Add R120)</option>
+            <option value="wellness">Mental Well-Being Tracker Module (Add R50)</option>
+        </select><br><br>
+    </div>
+
+    <label>Additional Specific Requirements / Message:</label><br>
+    <textarea id="enquiryMessage" placeholder="Type your specific message here..."></textarea><br><br>
+    
+    <button type="submit">Submit Enquiry & Calculate Total Cost</button>
+    
+    <div id="enquiryCalculationResult" class="form-response-box" style="display:none; margin-top: 20px; padding: 15px; border-radius: 6px;"></div>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="js/enquiry-calc.js" defer></script>
+
+
+
+</div>
+
+<!-- TEXT UNDER FORM -->
+
+<div class="enquiry-info">
+
+<div class="info-card">
+
+<h3>Stuck on something?</h3>
+
+<p>
+Ask us, we are here to help students.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Worried about slow feedback?</h3>
+
+<p>
+UniBuddy replies as fast as possible.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Enquiries = Free Advice</h3>
+
+<p>
+We will guide you in the right direction.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 UniBuddy | All Rights Reserved</p>
+</footer>
+
+    
+<script src="javascript/script.js"></script>
+
+</body>
+
+<button id="topBtn">↑</button> 
+
+</html>

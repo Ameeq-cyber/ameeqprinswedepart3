@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About UniBuddy | Our Mission to Empower Student Success</title>
+    <meta name="description" content="Discover the story behind UniBuddy. Founded in 2026, we provide essential productivity tools, peer support networks, and wellness balance systems for university students.">
+    <meta name="keywords" content="about unibuddy, student productivity, peer mentoring history, university study tools, campus support map">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+</head>
+
+<body>
+
+<header>
+    <h1>UniBuddy</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="services.html">Services</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>  
+
+<main>
+
+<section class="welcome-section">
+
+    <div class="content-row">
+        <img src="images/study 3.jpg" alt="Organized student desk setup using UniBuddy task planner tools" class="lightbox-trigger">
+        <div class="text-content">
+            <h2>About UniBuddy</h2>
+            <p>UniBuddy is focused solely on college and university students and mainly first years to navigate their academics and maintain a good well-being during their first year. It helps students manage their time efficiently and improve overall productivity levels. UniBuddy was founded in 2026 by a group of college students who presented the idea for a business pitch in their business management class.</p>
+        </div>
+    </div>
+
+    <div class="content-row">
+        <img src="images/happy student.jpg" alt="Group of smiling university graduates celebrating academic achievement" class="lightbox-trigger">
+        <div class="text-content">
+            <h3>Mission</h3>
+            <p>UniBuddy's mission is to be helpful in assisting students to excel academically through using creative tools and one of a kind features.</p>
+
+            <h3>Vision</h3>
+            <p>UniBuddy's vision is to become one of the best student productivity platforms and soon thereafter the leading student productivity platform for all college and university students and not just only first years.</p>
+
+            <h3>Target Users</h3>
+            <p>University and college students, first-years needing guidance, study groups and campus communities, and students wanting better organisation.</p>
+
+            <h3>Website goals</h3>
+            <p>The goals of UniBuddy are to provide students with the necessary academic support and promote student collaboration. Also to create an offline mode to access UniBuddy without internet and cater to a diverse student population.</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="map-section">
+    <h2>Our Active Campus Chapters</h2>
+    <p>Find a UniBuddy peer support chapter active at a university hub near you.</p>
+    <div id="campusMap" style="height: 400px; width: 100%; max-width: 1000px; margin: 20px auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);"></div>
+</section>
+
+<div id="galleryLightbox" class="lightbox-overlay">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-img" id="lightboxActiveImg" src="" alt="">
+    <div id="lightboxCaption" class="lightbox-caption"></div>
+</div>
+
+</main>
+
+<footer>
+    <p>© 2026 UniBuddy | All Rights Reserved</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="js/about-interactive.js" defer></script>
+</body>
+</html>

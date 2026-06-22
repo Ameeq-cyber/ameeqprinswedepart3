@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniBuddy Services | Academic Support & Student Productivity Systems</title>
+    <meta name="description" content="Explore UniBuddy campus services. Seamlessly manage schedules with our study planners, track task assignments, find peer tutors, and access focus productivity tools.">
+    <meta name="keywords" content="unibuddy services, academic planner, student productivity tools, group assignment tracker, peer tutoring help">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+<header>
+    <h1>UniBuddy</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>  
+
+<main class="services-container">
+    <h2>Our Campus Services</h2>
+    <p class="services-intro">Empowering university journeys with dedicated systems to track tasks, coordinate study groups, and balance your workload.</p>
+
+    <section class="search-filter-panel">
+        <div class="control-group">
+            <label for="serviceSearchInput">Search Features:</label>
+            <input type="text" id="serviceSearchInput" placeholder="Type keywords (e.g., Tracker, Support)..." autocomplete="off">
+        </div>
+        
+        <div class="control-group">
+            <label for="categoryFilterDropdown">Filter Category:</label>
+            <select id="categoryFilterDropdown">
+                <option value="all">All Focus Domains</option>
+                <option value="productivity">Productivity & Planning</option>
+                <option value="academic">Academic & Collaboration</option>
+            </select>
+        </div>
+    </section>
+
+    <section id="dynamicServicesWrapper" class="services-grid-display">
+        <p class="loading-state-placeholder">Compiling and generating student resource feeds...</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 UniBuddy | All Rights Reserved</p>
+</footer>
+
+<script src="js/services-search.js" defer></script>
+</body>
+</html>
+
